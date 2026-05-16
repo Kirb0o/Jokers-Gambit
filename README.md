@@ -1,1 +1,2 @@
 # Jokers-Gambit
+Joker's Gambit è un gioco di carte strategico browser. Supera 8 livelli formando mani di poker per raggiungere punteggi obiettivo. Dopo ogni vittoria, compra Joker (potenziano chips/moltiplicatore), Carte Pianeta (migliorano mani) o Tarocchi (effetti immediati) nel negozio. Il punteggio si calcola con (Chips × Moltiplicatore). 4 mani e 3 scarti per round. I Boss ogni 3 round cambiano le regole. Mescola strategia, fortuna e gestione soldi.
