@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joker's Gambit</title>
+<link
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght
+@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"></div>
+<button class="rules-btn" onclick="toggleRules()" title="Regole">?</button>
+<div id="overlay" class="overlay" style="display:none" onclick="closeOverlay(event)">
+<div class="overlay-box">
+<div class="overlay-title"> Come si gioca</div>
+<div class="rules-section">
+<h3>Obiettivo</h3>
+<p>Supera tutti gli 8 Ante (3 Blind ciascuno) raggiungendo il punteggio bersaglio con le mani di
+poker. Accumula Joker nel negozio per potenziare il punteggio.</p>
+</div>
+<div class="rules-section">
+<h3>Mani di Poker</h3>
+<table class="rules-table">
+<tr><td>Royal Flush</td><td>A K Q J 10 stessa seme → 100 × 8</td></tr>
+<tr><td>Straight Flush</td><td>Scala dello stesso seme → 100 × 8</td></tr>
+<tr><td>Poker</td><td>4 carte uguali → 60 × 7</td></tr>
+<tr><td>Full House</td><td>Tris + Coppia → 40 × 4</td></tr>
+<tr><td>Colore (Flush)</td><td>5 stessa seme → 35 × 4</td></tr>
+<tr><td>Scala (Straight)</td><td>5 consecutive → 30 × 4</td></tr>
+<tr><td>Tris</td><td>3 carte uguali → 30 × 3</td></tr>
+<tr><td>Doppia Coppia</td><td>Due coppie → 20 × 2</td></tr>
+<tr><td>Coppia</td><td>2 carte uguali → 10 × 2</td></tr>
+<tr><td>Carta Alta</td><td>Nessuna mano → 5 × 1</td></tr>
+</table>
+</div>
+<div class="rules-section">
+<h3>Punteggio</h3>
+<p>Punteggio = (Chips base + Chips carte) × Moltiplicatore. I Joker aggiungono Chips o Mult
+extra.</p>
+</div>
+<div class="rules-section">
+<h3>Soldi</h3>
+<p>Vinci un round: guadagni $3 base + $1 per mano non usata + interessi ($1 ogni $5 che possiedi,
+max $5).</p>
+</div>
+<button class="btn btn-gold"
+onclick="document.getElementById('overlay').style.display='none'">Chiudi</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
